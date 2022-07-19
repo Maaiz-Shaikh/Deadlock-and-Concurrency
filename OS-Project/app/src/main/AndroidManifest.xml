@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.deadlockandconcurrency">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Deadlock and Concurrency"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeadlockAndConcurrency">
+        <activity
+            android:name=".Deadlock"
+            android:label=""
+            android:parentActivityName=".IndexPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:label=""
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Concurrency"
+            android:label=""
+            android:parentActivityName=".IndexPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProducerConsumer"
+            android:label=""
+            android:parentActivityName=".algorithms"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".monitors"
+            android:label=""
+            android:parentActivityName=".algorithms"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BankersAlgorithmPage3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BankersAlgorithmPage2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BankersAlgorithm1"
+            android:exported="false"
+            android:label=""
+            android:parentActivityName=".algorithms"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Petersons"
+            android:exported="false"
+            android:label=""
+            android:parentActivityName=".algorithms"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".algorithms"
+            android:label="Algorithms"
+            android:parentActivityName=".IndexPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aboutapp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutDevelopers"
+            android:label=""
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IndexPage"
+            android:label=""
+            android:parentActivityName=".HomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Deadlock and Concurrency</string>
+    <string name="enter_number_of_processes">Enter number of processes</string>
+    <string name="enter_number_of_resources">Enter number of resources</string>
+    <string name="available_resources"><b>Available Resources</b></string>
+    <string name="next">Next</string>
+    <string name="enter_space_separated_integer_values">Enter space separated Integer values</string>
+    <string name="allocated_resources"><b>Allocated Resources</b></string>
+    <string name="add">add</string>
+    <string name="maximum_resources"><b>Maximum Resources</b></string>
+    <string name="startButton">START</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="theory">Peterson’s Algorithm is used to synchronize two processes. It uses two variables, a bool array flag of size 2 and an int variable turn to accomplish it.
+In the solution i represents the Consumer and j represents the Producer. Initially the flags are false. When a process wants to execute it’s critical section, it sets it’s flag to true and turn as the index of the other process. This means that the process wants to execute but it will allow the other process to run first. The process performs busy waiting until the other process has finished it’s own critical section.
+After this the current process enters it’s critical section and adds or removes a random number from the shared buffer. After completing the critical section, it sets it’s own flag to false, indication it does not wish to execute anymore.
+
+The program runs for a fixed amount of time before exiting. This time can be changed by changing value of the macro RT.</string>
+    <string name="concurrency">Concurrency</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="deadlock">Deadlock</string>
+    <!-- <string name="app_name">About developer</string>-->
+    <string name="app_about">
+    \n<b>Why you should use this App?</b>\n\n
+       <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam sit amet elit ac libero porttitor cursus.
+        Etiam non nisl eget urna commodo hendrerit.
+        Aenean non elit vulputate, sollicitudin ante ut, fermentum neque.</br>\n\n
+
+          <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam sit amet elit ac libero porttitor cursus.
+        Etiam non nisl eget urna commodo hendrerit.
+        Aenean non elit vulputate, sollicitudin ante ut, fermentum neque.</br>\n\n\n
+
+         <b><br><h2>How to  use this App?</h2></br></b>\n\n
+       <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam sit amet elit ac libero porttitor cursus.
+        Etiam non nisl eget urna commodo hendrerit.
+        Aenean non elit vulputate, sollicitudin ante ut, fermentum neque.</br>\n\n
+          <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam sit amet elit ac libero porttitor cursus.
+        Etiam non nisl eget urna commodo hendrerit.
+        Aenean non elit vulputate, sollicitudin ante ut, fermentum neque.</br>
+
+
+
+    </string>
+    <string name="concurrencytheory">Concurrency results in sharing of resources result in problems like deadlocks and resources starvation.
+
+\nIt helps in techniques like coordinating execution of processes, memory allocation and execution scheduling for maximizing throughput.
+\n
+
+\nPrinciples of Concurrency :
+\n
+\nBoth interleaved and overlapped processes can be viewed as examples of concurrent processes, they both present the same problems.
+
+\nThe relative speed of execution cannot be predicted. It depends on the following:
+\n
+\n1.The activities of other processes
+\n2.The way operating system handles interrupts
+\n3.The scheduling policies of the operating system
+</string>
+    <string name="deadlocktheory">Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
+    Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
+        Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
+        Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process.
+
+    </string>
+    <string name="producerconsumertheory">Producer consumer problem is a classical synchronization problem. We can solve this problem by using semaphores.
+
+A semaphore S is an integer variable that can be accessed only through two standard operations : wait() and signal().
+The wait() operation reduces the value of semaphore by 1 and the signal() operation increases its value by 1. Semaphores are of two types:
+
+Binary Semaphore – This is similar to mutex lock but not the same thing. It can have only two values – 0 and 1. Its value is initialized to 1. It is used to implement the solution of critical section problem with multiple processes.
+
+Counting Semaphore – Its value can range over an unrestricted domain. It is used to control access to a resource that has multiple instances.
+
+Problem Statement – We have a buffer of fixed size. A producer can produce an item and can place in the buffer. A consumer can pick items and can consume them. We need to ensure that when a producer is placing an item in the buffer, then at the same time consumer should not consume any item. In this problem, buffer is the critical section.
+
+To solve this problem, we need two counting semaphores – Full and Empty. “Full” keeps track of number of items in the buffer at any given time and “Empty” keeps track of number of unoccupied slots.
+
+Initialization of semaphores –
+mutex = 1
+Full = 0 // Initially, all slots are empty. Thus full slots are 0
+Empty = n // All slots are empty initially </string>
+    <string name="dinningphilosopher_monitors">The Dining Philosopher Problem – The Dining Philosopher Problem states that K philosophers seated around a circular table with one chopstick between each pair of philosophers. There is one chopstick between each philosopher. A philosopher may eat if he can pick up the two chopsticks adjacent to him. One chopstick may be picked up by any one of its adjacent followers but not both. </string>
+    <string name="petersonstheory">Peterson’s Algorithm is used to synchronize two processes. It uses two variables, a bool array flag of size 2 and an int variable turn to accomplish it. In the solution i represents the Consumer and j represents the Producer. Initially the flags are false. When a process wants to execute it’s critical section, it sets it’s flag to true and turn as the index of the other process. This means that the process wants to execute but it will allow the other process to run first. The process performs busy waiting until the other process has finished it’s own critical section. After this the current process enters it’s critical section and adds or removes a random number from the shared buffer. After completing the critical section, it sets it’s own flag to false, indication it does not wish to execute anymore. The program runs for a fixed amount of time before exiting. This time can be changed by changing value of the macro RT.</string>
+    <string name="simulate">simulate</string>
+    <string name="petersons_algorithm">Peterson\'s Algorithm</string>
+    <string name="bankerstheory">The banker’s algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by simulating the allocation for predetermined maximum possible amounts of all resources, then makes an “s-state” check to test for possible activities, before deciding whether allocation should be allowed to continue.Why Banker’s algorithm is named so? Banker’s algorithm is named so because it is used in banking system to check whether loan can be sanctioned to a person or not. Suppose there are n number of account holders in a bank and the total sum of their money is S. If a person applies for a loan then the bank first subtracts the loan amount from the total money that bank has and if the remaining amount is greater than S then only the loan is sanctioned. It is done because if all the account holders comes to withdraw their money then the bank can easily do it. In other words, the bank would never allocate its money in such a way that it can no longer satisfy the needs of all its customers. The bank would try to be in safe state always.</string>
+    <string name="bankers_algorithm">Banker\'s Algorithm</string>
+    <string name="producer_consumer">Producer Consumer</string>
+    <string name="dinning_philosopher">Dinning Philosopher</string>
+
+
+</resources>
