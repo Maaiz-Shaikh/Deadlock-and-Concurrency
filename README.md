@@ -2,6 +2,10 @@
 
 <img src="https://user-images.githubusercontent.com/88193033/209822479-202c1ad9-734e-4e6d-97bd-afbcf839bbcb.jpeg" width="300">
 
+[![Watch the video](https://img.youtube.com/vi/eCGQklYBdoM/maxresdefault.jpg)](https://youtu.be/eCGQklYBdoM)
+
+### [Watch this video on YouTube](https://youtu.be/eCGQklYBdoM)
+
 Deadlock & Concurrency is an android application which provide theory of deadlock and concurrency along with the theory ,simulation and visualization of few algorithms such as: 
 - Peterson's Algorithm, 
 - Banker's Algorithm, 
